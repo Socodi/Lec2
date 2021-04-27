@@ -29,7 +29,6 @@ public class Main {
             System.out.println(myCalc.divide(Num1, Num2));
 
         /*
-
         Car myCar = new Car("blue", 4);
         Car mumsCar = new Car("grey", 5);
 
