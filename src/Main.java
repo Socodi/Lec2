@@ -4,7 +4,7 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        /*
+
         Calc myCalc = new Calc();
 
         System.out.println("What would you like to do? A/S/M/D");
@@ -27,7 +27,8 @@ public class Main {
             System.out.println(myCalc.multiply(Num1, Num2));
         else if (action == 'd')
             System.out.println(myCalc.divide(Num1, Num2));
-        */
+
+        /*
 
         Car myCar = new Car("blue", 4);
         Car mumsCar = new Car("grey", 5);
@@ -69,6 +70,7 @@ public class Main {
         System.out.println("- Fixed size");
         System.out.println("- Hard to insert or delete");
         System.out.println("- Easy to waste memory");
+        */
 
     }
 }
