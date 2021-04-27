@@ -1,6 +1,6 @@
 public class Car {
-    public String colour;
-    public int wheels;
+    private String colour;
+    private int wheels;
 
     public String getColour() { return colour; }
 
@@ -11,19 +11,19 @@ public class Car {
     public void setWheels(int wheels) { this.wheels = wheels; }
 
     public Car(String colour, int wheels) {
-        this.colour = colour;
-        this.wheels = wheels;
+        this.setColour(colour);
+        this.setWheels(wheels);
     }
 
     public void printDetails() {
-        System.out.println("The car has " + this.wheels + " wheels and is " + this.colour);
+        System.out.println("The car has " + this.getWheels() + " wheels and is " + this.getColour());
     }
 
     @Override
     public String toString() {
         return "Car{" +
-                "colour='" + colour + '\'' +
-                ", wheels=" + wheels +
+                "colour='" + getColour() + '\'' +
+                ", wheels=" + getWheels() +
                 '}';
     }
 }

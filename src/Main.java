@@ -32,7 +32,7 @@ public class Main {
 
         myCar.printDetails();
 
-        System.out.println(myCar.toString());;
+        System.out.println(myCar.toString());
 
 
     }
