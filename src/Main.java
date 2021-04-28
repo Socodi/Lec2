@@ -1,5 +1,6 @@
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
 
@@ -9,24 +10,37 @@ public class Main {
 
         System.out.println("What would you like to do? A/S/M/D");
 
-        char action = (char) System.in.read();
+        Scanner userInput = new Scanner(System.in);
+
+        char action =  userInput.next().charAt(0);
+        System.out.println("char entered = " + action);
+
+//        char action = (char) System.in.read();
+
+
 
         System.out.print("First number: ");
 
-        int Num1 = System.in.read();
+//        int num1 = System.in.read();
+        int num1 =  userInput.nextInt();
+
+        System.out.println("First number entered = : " + num1);
 
         System.out.print("Second number:");
 
-        int Num2 = System.in.read();
+//        int num2 = System.in.read();
+        int num2 = userInput.nextInt();
+
+        System.out.println("2nd nuber = " + num2);
 
         if (action == 'a')
-            System.out.println(myCalc.add(Num1, Num2));
+            System.out.println(myCalc.add(num1, num2));
         else if (action == 's')
-            System.out.println(myCalc.subtract(Num1, Num2));
+            System.out.println(myCalc.subtract(num1, num2));
         else if (action == 'm')
-            System.out.println(myCalc.multiply(Num1, Num2));
+            System.out.println(myCalc.multiply(num1, num2));
         else if (action == 'd')
-            System.out.println(myCalc.divide(Num1, Num2));
+            System.out.println(myCalc.divide(num1, num2));
 
         /*
         Car myCar = new Car("blue", 4);
